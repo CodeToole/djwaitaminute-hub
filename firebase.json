@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "public_jaspr",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "ssr"
+      }
     ]
   }
 }
