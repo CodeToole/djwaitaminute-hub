@@ -1,5 +1,0 @@
-include: package:jaspr_repo/package.yaml
-
-linter:
-  rules:
-    comment_references: true
