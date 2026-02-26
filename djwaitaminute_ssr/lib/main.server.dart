@@ -29,7 +29,7 @@ void main() {
       head: [
         meta(name: 'viewport', content: 'width=device-width, initial-scale=1.0'),
         meta(name: 'description', content: 'The official digital hub for DJ Waitaminute.'),
-        script(src: 'https://cdn.tailwindcss.com?plugins=forms,typography'),
+        script(src: 'https://cdn.tailwindcss.com'),
         link(href: 'https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Inter:wght@400;600;800&display=swap', rel: 'stylesheet'),
         link(href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet'),
         script(src: '/tailwind.config.js'),

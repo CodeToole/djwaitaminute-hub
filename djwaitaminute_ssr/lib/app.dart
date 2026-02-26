@@ -2,12 +2,11 @@ import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
 
-import 'components/header.dart';
+import 'components/navbar.dart';
 import 'components/hero_video.dart';
+import 'components/site_footer.dart';
 import 'components/lead_capture.dart';
 import 'components/broadcast_hub.dart';
-import 'pages/about.dart';
-import 'pages/home.dart';
 
 // The main component of your application.
 //
@@ -23,26 +22,13 @@ class App extends StatelessComponent {
     // Renders a <div class="app-root"> html element with children.
     return div(
       classes:
-          'app-root bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-body antialiased transition-colors duration-300 min-h-screen flex flex-col',
+          'app-root bg-[#111] text-white font-body antialiased transition-colors duration-300 min-h-screen flex flex-col',
       [
-        const Header(),
+        const Navbar(),
         const HeroVideo(),
         const BroadcastHub(),
         const LeadCapture(),
-        Router(
-          routes: [
-            Route(
-              path: '/',
-              title: 'Home',
-              builder: (context, state) => const Home(),
-            ),
-            Route(
-              path: '/about',
-              title: 'About',
-              builder: (context, state) => const About(),
-            ),
-          ],
-        ),
+        const SiteFooter(),
       ],
     );
   }

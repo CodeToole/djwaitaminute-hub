@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public_jaspr",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",

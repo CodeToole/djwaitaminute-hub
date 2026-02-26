@@ -52,7 +52,7 @@ class HeroVideo extends StatelessComponent {
           ),
           div(classes: 'flex flex-col sm:flex-row gap-4 justify-center items-center', [
             a(
-              href: '#contact',
+              href: 'mailto:cornelius@djwaitaminute.com',
               classes:
                   'group relative px-8 py-4 bg-primary text-black font-display font-bold text-2xl tracking-widest uppercase hover:bg-white transition-all duration-300 transform hover:-translate-y-1 toxic-shadow w-full sm:w-auto',
               [
